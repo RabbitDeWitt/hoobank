@@ -40,7 +40,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
               >
-                <a href={(`#${link.id}`)}>
+                <a href={(`#${link.id}`)} onClick={() => setToggle(prev => !prev)}>
                   {link.title}
                 </a>
               </li>
